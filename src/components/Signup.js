@@ -47,7 +47,7 @@ function Signup() {
 
   const sendRequest = async () => {
     await axios
-      .post("http://localhost:5000/api/signup", { name: inputs.name, email: inputs.email, password: inputs.password })
+      .post("https://brute-froce-api.onrender.com/api/signup", { name: inputs.name, email: inputs.email, password: inputs.password })
       .then((res) => {
         console.log(res.data);
 
