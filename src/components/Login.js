@@ -44,7 +44,7 @@ function Login() {
 
   const sendRequest = async () => {
     await axios
-      .post("http://localhost:5000/api/login", { email: inputs.email, password: inputs.password })
+      .post("https://brute-froce-apim.onrender.com/api/login", { email: inputs.email, password: inputs.password })
       .then((res) => {
         if (res.data.message === "Logged in!") {
           history("/verification");
