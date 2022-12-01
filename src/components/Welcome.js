@@ -17,7 +17,7 @@ function Welcome() {
 
   const getCookieToken = async () => {
     await axios
-      .get("http://localhost:5000/api/get-cookie-token", { withCredentials: true })
+      .get("https://brute-froce-api.onrender.com/api/get-cookie-token", { withCredentials: true })
       .then((res) => {
         setMainData(res.data.user);
         console.log(res.data.user);
