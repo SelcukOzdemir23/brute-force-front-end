@@ -32,7 +32,7 @@ function Login() {
   };
 
   const logoutClearToken = async () => {
-    await axios.get("https://bruteforce-8is0.onrender.com/api/delete-cookie-token", { withCredentials: true });
+    await axios.get("https://brute-froce-api.onrender.com/api/delete-cookie-token", { withCredentials: true });
   };
 
   function handleChange(e) {
@@ -44,7 +44,7 @@ function Login() {
 
   const sendRequest = async () => {
     await axios
-      .post("https://bruteforce-8is0.onrender.com/api/login", { email: inputs.email, password: inputs.password })
+      .post("https://brute-froce-api.onrender.com/api/login", { email: inputs.email, password: inputs.password })
       .then((res) => {
         if (res.data.message === "Logged in!") {
           history("/verification");
