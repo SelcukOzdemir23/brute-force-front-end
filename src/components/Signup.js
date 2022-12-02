@@ -65,16 +65,16 @@ function Signup() {
     console.log(inputs);
   }, [inputs]);
 
-  useEffect(() => {
-    console.log(state);
+  // useEffect(() => {
+  //   console.log(state);
 
-    setState((prev) => ({
-      ...prev,
-      isLoggedIn: false,
-    }));
+  //   setState((prev) => ({
+  //     ...prev,
+  //     isLoggedIn: false,
+  //   }));
 
 
-  }, []);
+  // }, []);
 
   return (
     <div>
